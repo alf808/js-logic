@@ -28,7 +28,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
-
+ function canVote(age) {
+	if (age >= 18) {
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log("canVote: " + canVote(17));
 
 /*
  * #2
@@ -41,7 +48,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
-
+function login(password) {
+	if (password === "test1234") {
+		return "Login Success!";
+	} else {
+		return "Login failed.";
+	}
+}
+console.log(login("test1234"));
 
 /*
  * #3
@@ -55,8 +69,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
-
-
+function isGreaterThan(first, second) {
+	if (first > second) {
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log(isGreaterThan(1, 3));
 
 /*
  * #4
@@ -69,8 +89,13 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
-
-
+function mustBeTrue(boo) {
+	if (Boolean(boo) === true) {
+		return true;
+	}
+	return false;
+}
+console.log(mustBeTrue(true));
 
 /*
  * #5
@@ -83,8 +108,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
-
+function bigBird(word) {
+	word += "";
+	if (word.trim().length === 3) {
+		return "Word to Big Bird!";
+	}
+	return "uh-oh";
+}
+console.log(bigBird(248));
 
 /*
  * #6
@@ -98,7 +129,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
+function isEqual(first, second) {
+	if (first === second) {
+		return "You look mahvelous!";
+	} else {
+		return "I don\'t know who you are anymore.";		
+	}
+}
+console.log(isEqual("hi", "hi"));
 
 /*
  * #7
@@ -245,14 +283,19 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
-
+for (let i = 1; i<=5; i++){
+   console.log("Player: " + i);
+}
 
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
-  var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
-
+var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+for(let item of myFavFoods) {
+	console.log(item);
+}
+console.log(item);
 
 /*
  * #17
@@ -296,7 +339,7 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
 
 /*
