@@ -202,7 +202,7 @@ function dirty30(one, two, three) {
 	return false;
     }
 }
-
+console.log("dirty30: " + dirty30(21, 1, 2));
 
 /*
  * #10
