@@ -76,7 +76,7 @@ function isGreaterThan(first, second) {
 		return false;
 	}
 }
-console.log(isGreaterThan(1, 3));
+console.log("isGreaterThan: " + isGreaterThan(1, 3));
 
 /*
  * #4
@@ -95,7 +95,7 @@ function mustBeTrue(boo) {
 	}
 	return false;
 }
-console.log(mustBeTrue(true));
+console.log("mustBeTrue " + mustBeTrue(true));
 
 /*
  * #5
@@ -115,7 +115,7 @@ function bigBird(word) {
 	}
 	return "uh-oh";
 }
-console.log(bigBird(248));
+console.log("bigBird " + bigBird(248));
 
 /*
  * #6
@@ -136,7 +136,7 @@ function isEqual(first, second) {
 		return "I don\'t know who you are anymore.";		
 	}
 }
-console.log(isEqual("hi", "hi"));
+console.log("isEqual " + isEqual("hi", "hi"));
 
 /*
  * #7
@@ -150,7 +150,14 @@ console.log(isEqual("hi", "hi"));
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
-
+function notEqual(first, second) {
+    if (first !== second) {
+	return "Opposites do attract.";
+    } else {
+	return "Cause it\'s like you\'re my mirror";
+    }
+}
+console.log("notEqual: " + notEqual("hi","oh"));
 
 /*
  * #8
@@ -164,7 +171,15 @@ console.log(isEqual("hi", "hi"));
  * Console.log your result.
 */ 
 
+function spareChange(money) {
+    if (money > 100) {
+	return true;
+    } else {
+	return false;
+    }
+}
 
+console.log("spareChange: " + spareChange(23));
 
 /*
  * #9
@@ -179,7 +194,14 @@ console.log(isEqual("hi", "hi"));
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function dirty30(one, two, three) {
+    var sumThis = one + two + three;
+    if (sumThis > 30) {
+	return true;
+    } else {
+	return false;
+    }
+}
 
 
 /*
@@ -193,7 +215,9 @@ console.log(isEqual("hi", "hi"));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
+function evenStevens(num) {
+    return true;
+}
 
 
 
@@ -209,6 +233,9 @@ console.log(isEqual("hi", "hi"));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
+function daClub(cover, age) {
+    return "ok";
+}
 
 
 /*
@@ -223,7 +250,9 @@ console.log(isEqual("hi", "hi"));
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
-
+function graduation(credit, thesis) {
+    return "ok";
+}
 
 
 /*
@@ -237,7 +266,9 @@ console.log(isEqual("hi", "hi"));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-
+function moneyTrain(speed) {
+    return "ok";
+}
 
 /*
  * #14
@@ -252,7 +283,9 @@ console.log(isEqual("hi", "hi"));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
-
+function buyDoughnut() {
+    
+}
 
 
 
