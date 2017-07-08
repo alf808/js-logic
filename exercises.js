@@ -32,7 +32,7 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 	if (age >= 18) {
 		return true;
 	} else {
-		return false;
+		return 0;
 	}
 }
 console.log("canVote: " + canVote(17));
@@ -295,7 +295,7 @@ var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "r
 for(let item of myFavFoods) {
 	console.log(item);
 }
-console.log(item);
+//console.log(item);
 
 /*
  * #17
