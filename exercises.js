@@ -305,9 +305,17 @@ console.log(moneyTrain(100));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 21;
+var doughnutPrice = 4;
+var doughnutBought = 0;
 function buyDoughnut() {
-    
+    budget -= doughnutPrice;
+    doughnutBought++;
 }
+buyDoughnut();
+console.log(("budget: " + budget + ", doughnutBought: " + doughnutBought));
+buyDoughnut();
+console.log(("budget: " + budget + ", doughnutBought: " + doughnutBought));
 
 
 
