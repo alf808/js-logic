@@ -238,9 +238,13 @@ console.log("evenStevens: " + evenStevens(8));
  * Console.log your result.
 */ 
 function daClub(cover, age) {
-    return "ok";
+    if (cover >= 21 && age >= 21) {
+	return "Welcome to the Legends Lounge.";
+    } else {
+	return "Chuck E Cheese is across the street.";
+    }
 }
-
+console.log("daClub: " + daClub(21, 21));
 
 /*
  * #12
@@ -255,9 +259,13 @@ function daClub(cover, age) {
  * Console.log your result.
 */ 
 function graduation(credit, thesis) {
-    return "ok";
+    if (credit >= 120 || thesis === true) {
+	return "Congratulations on a job well done";
+    } else {
+	return "See you in summer school";
+    }
 }
-
+console.log("graduation: " + graduation(119, false));
 
 /*
  * #13
